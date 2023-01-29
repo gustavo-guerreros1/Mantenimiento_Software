@@ -89,13 +89,26 @@ public class Compras {
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
-
 	public Long getIdcliente() {
-		return idcliente;
+			return idcliente;
 	}
-
+		
 	public void setIdcliente(Long idcliente) {
-		this.idcliente = idcliente;
+			this.idcliente = idcliente;
 	}
 
+	public Object getProducto() {
+		return null;
+	}
+
+    public char[] getPrecio() {
+        return null;
+    }
+
+    public char[] getIdCompra() {
+        return null;
+    }
 }
+
+		
+

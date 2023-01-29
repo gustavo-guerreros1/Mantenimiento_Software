@@ -33,7 +33,7 @@ public class Usuario {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getNombre() {
+	public static String getNombre() {
 		return nombre;
 	}
 	public void setNombre(String nombre) {
