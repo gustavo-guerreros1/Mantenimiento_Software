@@ -35,12 +35,13 @@
 
 									<div class="col-md-12">
 										<div class="checkout-form-list">
-											<label>Numero de la tarjeta<span class="required">*</span></label> 
+											<label>Numero de la tarjetaaaaa<span class="required">*</span></label> 
 											<input placeholder=""
-												type="text"  th:field="*{numeroTarjeta}" th:if="${exito!=null}"
+												type="number"  th:field="*{numeroTarjeta}" th:if="${exito!=null}"
 												style="background: #f2f2f2;" disabled>
 											<input placeholder=""
-												type="text"  th:field="*{numeroTarjeta}" th:if="${exito==null}">
+												type="number"  th:field="*{numeroTarjeta}" th:if="${exito==null}"
+												title="debe llenar este campo"  required>
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -51,7 +52,8 @@
 												style="background: #f2f2f2;" disabled>
 											
 											<input
-												placeholder="" type="text" th:field="*{mm}" th:if="${exito==null}">
+												placeholder="" type="number" th:field="*{mm}" th:if="${exito==null}"
+												title="debe llenar este campo" required>
 												
 										</div>
 									</div>
@@ -62,7 +64,8 @@
 												style="background: #f2f2f2;" disabled>
 												
 											<input
-												placeholder="" type="text"  th:field="*{cvc}" th:if="${exito==null}">
+												placeholder="" type="number"  th:field="*{cvc}" th:if="${exito==null}"
+												title="debe llenar este campo" required>
 												
 										</div>
 									</div>
@@ -71,7 +74,8 @@
 											<label>Codigo postal <span class="required">*</span></label>
 											<input placeholder="" type="text"  th:field="*{codigoPostal}" th:if="${exito!=null}" 
 										     style="background: #f2f2f2;"	 disabled>
-											<input placeholder="" type="text"  th:field="*{codigoPostal}" th:if="${exito==null}">
+											<input placeholder="" type="number"  th:field="*{codigoPostal}" th:if="${exito==null}"
+											title="debe llenar este campo" required>
 										</div>
 									</div>
 								</div>
